@@ -1,25 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from "./card/card";
+import Cards from "./card/cards";
+import Form from "./card/form";
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+return (
+  <div>
+    
+    <div>
+  <h1 className="card-titlee"> My FAVOURITES </h1>
+  </div>
+  <Cards/>
+  <h1 className="form-title">CONTACT ME</h1>
+  <Form/>
+  </div>
+  
+)
+    
+  }
 
 export default App;
